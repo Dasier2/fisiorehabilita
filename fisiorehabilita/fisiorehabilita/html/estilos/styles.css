@@ -1,0 +1,66 @@
+    
+body{
+    background-image: url("img/fondo.jpg");
+    background-size: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.pelota {
+    top: 0;
+    left: 0;
+    background: radial-gradient( circle, rgba(157, 245, 248, 0.5), rgba(0, 204, 255, 0.432)) ;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1000; /* Asegura que estén sobre todo */
+    pointer-events: none; /* Evita que interfieran con clics */
+}
+.cuerpo{
+    background-image: url(img/cuadroborroso.jpg);
+    background-repeat: no-repeat; 
+    text-align: center;
+    background-size: cover;
+    margin-top: -8%;
+    position: relative;
+    z-index: 1;
+}
+
+
+#parrafo{
+    color:rgb(0, 0, 0);
+    display:inline-flex;
+    padding:3px 20px;
+    font-style: italic;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 65px;
+    margin-top: 325px;
+    margin-bottom: 0;
+    color: rgb(32, 36, 102);
+    text-shadow: 2px 3px 10px rgb(156, 156, 156);
+    font-style: oblique; 
+    
+}
+.servicios{
+    background-color:rgb(16, 36, 211);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:20px auto;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.botonservicios:hover{ 
+    font-size: 21px; 
+    transition: all .2s;
+}

@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+.grupo {
+    justify-content:space-between;
+    margin: 30px auto 30px auto;
+
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(32, 36, 102);
+    text-shadow: 1px 2px black;
+    margin: auto 30px;
+}
+
+.btn{
+    background-color:rgb(16, 36, 211);
+    color: rgb(255, 255, 255);
+    padding: 5px 25px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+button.btn:hover{
+    background-color:rgb(16, 36, 211);
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transform: scale(1.2);
+
+}
+
+
+
+.card{
+    text-align: center;
+    background: none;
+    border: none;
+    align-items: center;
+    border-radius: 5%;
+    
+}
+.card-img-top{
+    border: 8px solid rgb(32, 36, 102);
+    width: 65%;
+    border-radius: 10%;
+    
+}
+
+.parrafo{
+    font-size: 40px;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.botond, .botoni{
+    margin-top: -100px;
+    width: 100px;
+    height: 100px;
+    margin: 25% auto;
+    position: fixed;
+}
+
+.flecha{
+    border-radius: 50%;
+    padding:15px;
+    background-color: white;
+    color: rgb(16, 36, 211);
+    box-shadow: 0px 0px 3px rgb(83, 83, 83);
+}
+
+.vermas{
+    background-color: rgba(255, 166, 0, 0.952);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.card-img-overlay{
+    margin: 30% auto;
+}
+
+.card-img-overlay:hover{
+    margin: 2% auto auto auto;
+    width: 65%;
+    height: 65%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.932);
+    font-weight: lighter;
+    .vermas{
+        display: none;
+    }
+    .contenido{
+        display: block;
+    }
+}
+
+.contenido{
+    text-align:justify;
+    display: none;
+  
+}
+

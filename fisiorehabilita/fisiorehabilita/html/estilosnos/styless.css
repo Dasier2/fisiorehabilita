@@ -1,0 +1,41 @@
+body {
+    background-image: url(img/fondoborroso.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+
+.grupom,.grupov{
+    display: flex;
+    margin-top: 0;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(32, 36, 102);
+    text-shadow: 1px 2px black;
+   
+}
+
+.parrafonosotros{
+    font-size: 25px;
+    margin: auto 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+
+.nosotros{
+    width: 300px;
+    margin:0 20px auto 20px;
+    
+    border-radius: 5%;
+}
+
+.foto{
+    margin-top: 30px;
+}
+
+

@@ -1,0 +1,232 @@
+body{
+    background-image: url("img/fondb.png");
+    background-size: 100%;
+}
+
+#principal{
+    display:flex;
+    
+}
+.fotos{
+    width: 60%;
+}
+.carousel-item {
+   margin-left: 30%;
+}
+
+h3{
+    text-align: center;
+    margin: auto auto auto 250px;
+    text-align:center;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(32, 36, 102);
+    text-shadow: 1px 2px black;
+  
+}
+
+#textoint{
+    text-align: center;
+    margin:5px auto auto 250px;
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.formulario{
+    display:block;
+    gap: 20px;
+    width: 600px;
+    height: auto;
+    margin: auto 20px auto 5%;
+    border-radius: 10px;
+    border: 2px solid  rgb(32, 36, 102);
+    padding:30px;
+    background-color:  rgb(230, 230, 230);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+
+.formulario_grupo-input{  
+    position: relative;
+}
+
+.inputformulario{
+	background-color: #fbfbfb; 
+	width: 350px; 
+	height: 32px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: rgb(32, 36, 102); 
+	padding-left: 10px;
+    margin-bottom: 5px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.inputformulario:focus{ 
+    outline: none;
+}
+
+textarea{
+    background-color: #fbfbfb; 
+    width: 350px; 
+    height: 100px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: rgb(32, 36, 102); 
+    margin-top: 2px;  
+    padding-left: 10px;
+    margin-bottom: 3px; 
+    padding-top: 10px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    resize: none;
+
+}
+  
+.formulario_label{
+    display: block; 
+    float: inline-start; 	
+}
+
+.formulario_input-error{
+    font-size: 12px;
+    display: none;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: right;
+}
+
+.formulario_input-error-activo{
+    display: block;
+}
+
+.formulario_validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario_mensaje, .formulario_grupo-btn-enviar{
+    grid-column: span 2;
+}
+
+.formulario_mensaje {
+    height: 45px;
+    line-height: 45px;
+    color: #F66060;
+    padding: 0 15px;
+    border-radius: 20px;
+    display: none;
+    margin: 10px auto;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+
+.formulario_mensaje-activo{
+    display: block;
+}
+
+
+.formulario_grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario_btn{
+	height: 45px; 
+    line-height: 45px;
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 10px; 
+    margin-top: 0;
+	text-transform: uppercase;
+	background-color: rgb(233, 116, 6);
+	border-color:rgb(233, 116, 6);
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 350px;   
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    transition: .1s ease all;
+}
+
+.formulario_btn:hover{
+    background: rgba(233, 116, 6, 0.918);
+}
+
+.formulario_mensaje-exito{
+    font-size: 14px;
+    color: #1ed12d;
+    display: none;
+   
+}
+
+.formulario_mensaje-exito-activo{
+    display: block;
+}
+
+
+.formulario_grupo-correcto .formulario_validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario_grupo-correcto .inputformulario{
+    border: 3px solid #1ed12d;
+    color: #1ed12d;
+}
+
+
+.formulario_input-error, .formulario_grupo-incorrecto .formulario_validacion-estado{
+    color: #F66060;
+    opacity: 1;
+}
+
+
+
+.formulario_grupo-incorrecto .inputformulario{
+    border: 3px solid #F66060;
+    color: #F66060;
+}
+
+select{
+    background-color: #fbfbfb; 
+	width: 360px; 
+	height: 35px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: rgb(32, 36, 102); 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 3px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 800px){
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formulario_mensaje, .formulario_grupo-btn-enviar{
+        grid-column: 1;
+    }
+    .formulario_btn{
+        width: 100%;
+    }
+}
+
